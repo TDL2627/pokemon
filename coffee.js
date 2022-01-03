@@ -18,8 +18,16 @@ function createPokeball(pokeball) {
         <h3>${pokeball.name}</h3>
         <h5>${card.type}</h5>
         <p>${card.details}</p>
-
       </div>
     `;
     return createdPokeball;
   }
+
+function displayBalls() {
+    let projectContainer = document.querySelector(".pokemon");
+    for (pokemon of pokemons ){
+        let pokeball = createPokeball(pokeball);
+        projectContainer.innerHTML += pokeball;
+    }
+}
+displayBalls();
