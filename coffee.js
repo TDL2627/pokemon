@@ -1,4 +1,4 @@
-let pokemons = [
+let pokemon = [
     {
         Ppic:"https://picsum.photos/300?random=1",
         name:"Charizard",
@@ -16,18 +16,18 @@ function createPokeball(pokeball) {
     let createdPokeball = `<div class="pokemon">
         <img src="${pokeball.Ppic}">
         <h3>${pokeball.name}</h3>
-        <h5>${card.type}</h5>
-        <p>${card.details}</p>
+        <h5>${pokeball.type}</h5>
+        <p>${pokeball.details}</p>
       </div>
     `;
     return createdPokeball;
   }
 
 function displayBalls() {
-    let projectContainer = document.querySelector(".pokemon");
-    for (pokemon of pokemons ){
-        let pokeball = createPokeball(pokeball);
-        projectContainer.innerHTML += pokeball;
+    let pokemons = document.querySelector(".pokemon");
+    for (pokeball of pokemon ){
+        let item = createPokeball(pokeball);
+        pokemons.innerHTML += item;
     }
 }
 displayBalls();
