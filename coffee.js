@@ -13,7 +13,7 @@ let pokemon = [
     }
 ];
 function createPokeball(pokeball) {
-    let createdPokeball = `<div class="pokemon">
+    let createdPokeball = `<div class="pokeball">
         <img src="${pokeball.Ppic}">
         <h3>${pokeball.name}</h3>
         <h5>${pokeball.type}</h5>
