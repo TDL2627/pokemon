@@ -1,6 +1,13 @@
-body{
+h1{
     text-align: center;
 }
 .pokeball{
     border: 2px solid red;
+    border-radius:50% ;
+    width: 500px;
+    height: 450px;
+    margin: 250px;
+    text-align: center;
+    background-color: red;
+
 }
